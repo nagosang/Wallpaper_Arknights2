@@ -38529,7 +38529,7 @@
                                             c = u[0],
                                             h = u[1],
                                             d = u[2];
-                                        h.x += (Li.clientX - h.x) * d, h.y += (Li.clientY - h.y) * d, c.style.left = h.x.toFixed(2) + "px", c.style.top = h.y.toFixed(2) + "px"
+                                        h.x += (Li.clientX - h.x) * d, h.y += (Li.clientY - h.y) * d, c.style.left = h.x.toFixed(2) + "px", c.style.top = h.y.toFixed(2)-document.body.clientHeight + "px"
                                     }
                                 } catch (e) {
                                     t = {

@@ -1,9 +1,6 @@
 'use strict';
 
 var timeElm = document.getElementById('time');
-var doc = document.documentElement;
-var clientWidth = doc.clientWidth;
-var clientHeight = doc.clientHeight;
 
 var pad = function pad(val) {
   return val < 10 ? '0' + val : val;

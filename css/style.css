@@ -34,14 +34,14 @@
   transition: transform 1s cubic-bezier(0.5, 0, 0.5, 1);
   transition: transform 1s cubic-bezier(0.5, 0, 0.5, 1), -webkit-transform 1s cubic-bezier(0.5, 0, 0.5, 1);
 }
-.digit:hover {
+/* .digit:hover {
   -webkit-transform: translateZ(2vmax);
           transform: translateZ(2vmax);
-}
-.digit:hover:after, .digit:hover:before {
+} */
+/* .digit:hover:after, .digit:hover:before {
   -webkit-transform: translateZ(-2vmax);
           transform: translateZ(-2vmax);
-}
+} */
 .digit:nth-child(2), .digit:nth-child(4) {
   margin-right: 3vmax;
 }
