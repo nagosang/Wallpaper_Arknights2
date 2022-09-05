@@ -29407,11 +29407,11 @@
             },
             9033: function (e, t, n) {
                 "use strict";
-                e.exports = "/img/firefly.png"
+                e.exports = "img/firefly.png"
             },
             709: function (e, t, n) {
                 "use strict";
-                e.exports =  "/img/particle.png"
+                e.exports =  "img/particle.png"
             },
             631: function (e, t, n) {
                 "use strict";
@@ -38549,18 +38549,19 @@
                             r = t.outer,
                             i = t.effect;
                         n.className = "ako-cursor-container", r.className = "ako-cursor-outer", i.className = "ako-cursor-effect", r.style.transform = "translate3d(-50%, -50%, 0)", i.style.transform = "translate3d(-50%, -50%, 0)", n.appendChild(r), n.appendChild(i), document.body.appendChild(n), document.body.addEventListener("mousedown", (function (t) {
-                            "desktop" !== kt.mode || e.clickAnimating || (e.clickAnimating = !0, rt({
-                                targets: i,
-                                easing: "easeOutCubic",
-                                duration: 500,
-                                left: [t.clientX, t.clientX],
-                                top: [t.clientY, t.clientY],
-                                scale: [0, 1],
-                                opacity: [1, 0],
-                                complete: function () {
-                                    return e.clickAnimating = !1
-                                }
-                            }))
+                            // console.log("鼠标点击")
+                            // "desktop" !== kt.mode || e.clickAnimating || (e.clickAnimating = !0, rt({
+                            //     targets: i,
+                            //     easing: "easeOutCubic",
+                            //     duration: 500,
+                            //     left: [t.clientX, t.clientX],
+                            //     top: [t.clientY, t.clientY],
+                            //     scale: [0, 1],
+                            //     opacity: [1, 0],
+                            //     complete: function () {
+                            //         return e.clickAnimating = !1
+                            //     }
+                            // }))
                         })), this.fire()
                     }
                     return e.prototype.fire = function () {
