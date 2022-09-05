@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+	<!--必要样式-->
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <link href="/css/index.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="loading s_unStart">
+        <div class="loadingBarGroup">
+            <div class="loadingBar left"></div>
+            <div class="loadingBar right"></div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="mainContainer">
+
+            <div class="container demo-1"  style="position:absolute;left: 240px; top:300px;"  >
+                <div class="content">
+                    <div id="large-header" class="large-header"  style="background-color: black;">
+                        <div class="time" id="time" data-hours="" data-minutes="">
+                            <div class="digit">
+                                <div class="line"></div>
+                                <div class="line"></div>
+                                <div class="line"></div>
+                                <div class="line"></div>
+                                <div class="line"></div>
+                                <div class="line"></div>
+                                <div class="line"></div>
+                            </div>
+                            <div class="digit">
+                                <div class="line"></div>
+                                <div class="line"></div>
+                                <div class="line"></div>
+                                <div class="line"></div>
+                                <div class="line"></div>
+                                <div class="line"></div>
+                                <div class="line"></div>
+                            </div>
+                            <div class="digit">
+                                <div class="line"></div>
+                                <div class="line"></div>
+                                <div class="line"></div>
+                                <div class="line"></div>
+                                <div class="line"></div>
+                                <div class="line"></div>
+                                <div class="line"></div>
+                            </div>
+                            <div class="digit">
+                                <div class="line"></div>
+                                <div class="line"></div>
+                                <div class="line"></div>
+                                <div class="line"></div>
+                                <div class="line"></div>
+                                <div class="line"></div>
+                                <div class="line"></div>
+                            </div>
+                            <div class="digit">
+                                <div class="line"></div>
+                                <div class="line"></div>
+                                <div class="line"></div>
+                                <div class="line"></div>
+                                <div class="line"></div>
+                                <div class="line"></div>
+                                <div class="line"></div>
+                            </div>
+                            <div class="digit">
+                                <div class="line"></div>
+                                <div class="line"></div>
+                                <div class="line"></div>
+                                <div class="line"></div>
+                                <div class="line"></div>
+                                <div class="line"></div>
+                                <div class="line"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /container -->
+    
+            <div class="slide mainSlider">
+                <div class="layout"><canvas id="webgl"></canvas>
+                    <nav id="nav">
+                        <div class="navBtn"><i class="navBtnIcon"><span class="navBtnIconBar"></span><span
+                                    class="navBtnIconBar"></span><span class="navBtnIconBar"></span></i></div>
+                        <div class="navContent">
+                            <div class="navMenuMedia"><a class="navMenuButton" target="_blank"
+                                    href="https://www.bilibili.com/blackboard/activity-mrfzjttzdw.html"><svg
+                                        version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 2500 2500">
+                                        <use xlink:href="#bilibili-text" transform="translate(0, 600)"></use>
+                                    </svg></a><a class="navMenuButton wechat" href="javascript:void(0);"><svg
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        viewBox="-50 -75 612 612">
+                                        <use xlink:href="#wechat-icon"></use>
+                                    </svg></a><a class="navMenuButton" target="_blank"
+                                    href="https://www.weibo.com/arknights"><svg xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-2 -2 28 28">
+                                        <use xlink:href="#weibo-icon"></use>
+                                    </svg></a><a class="navMenuButton" target="_blank"
+                                    href="https://www.taptap.com/app/70253"><svg xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 220 220">
+                                        <use xlink:href="#taptap-icon" transform="translate(0, 60)"></use>
+                                    </svg></a></div>
+                        </div>
+                    </nav>
+                    <div class="scrollTips">
+                        <div class="scrollTipsText"></div><span class="scrollTipsArrow"></span><span
+                            class="scrollTipsArrow"></span>
+                    </div>
+                    <div class="sections">
+                        <div class="sectionsWrapper">
+                            <section class="section world" id="section-world">
+                                <div class="sectionDisplay">
+                                    <div class="sectionHeader"></div>
+                                    <div class="storyListWrapper">
+                                        <ol class="storyList">
+                                        </ol>
+                                    </div>
+                                </div>
+                                <div class="storyDetailView"><svg class="svgDefs" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 70 70">
+                                        <defs>
+                                            <path id="close-br"
+                                                d="M62.324,70.228 L38.768,46.653 L38.768,39.894 L45.522,39.894 L69.077,63.469 L69.077,70.228 L62.324,70.228 Z">
+                                            </path>
+                                            <path id="close-tr"
+                                                d="M38.768,31.269 L38.768,24.509 L62.324,0.935 L69.077,0.935 L69.077,7.694 L45.522,31.269 L38.768,31.269 Z">
+                                            </path>
+                                            <path id="close-bl"
+                                                d="M0.604,70.228 L0.604,63.469 L24.159,39.894 L30.913,39.894 L30.913,46.653 L7.357,70.228 L0.604,70.228 Z">
+                                            </path>
+                                            <path id="close-tl"
+                                                d="M0.604,7.694 L0.604,0.935 L7.357,0.935 L30.913,24.509 L30.913,31.269 L24.159,31.269 L0.604,7.694 Z">
+                                            </path>
+                                        </defs>
+                                    </svg>
+                                    <div class="arrowBtn storyDetailNavBtn prev" data-cursor="pointer"><svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 103 103">
+                                            <circle class="dot" r="4.5" cx="36" cy="51.5" transform-origin="34% 50%"
+                                                transform="scale(0, 0)"></circle>
+                                            <g transform="translate(35, 15)">
+                                                <use class="top" xlink:href="#arrow-btn-tr"
+                                                    transform-origin="16.1% 15.9%"></use>
+                                                <use class="bot" xlink:href="#arrow-btn-br" transform-origin="16% 55%">
+                                                </use>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <div class="arrowBtn storyDetailNavBtn next" data-cursor="pointer"><svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 103 103">
+                                            <circle class="dot" r="4.5" cx="67" cy="51.5" transform-origin="66% 50%"
+                                                transform="scale(0, 0)"></circle>
+                                            <g transform="translate(35, 15)">
+                                                <use class="top" xlink:href="#arrow-btn-tl"
+                                                    transform-origin="16.1% 15.9%"></use>
+                                                <use class="bot" xlink:href="#arrow-btn-bl" transform-origin="16% 55%">
+                                                </use>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <div class="storyDetailInfoWrapper">
+                                        <div class="storyDetailClose">
+                                            <div class="storyDetailSeparator vertical"></div>
+                                            <div class="storyDetailSeparator horizontal"></div>
+                                            <div class="storyDetailCloseBtn" data-cursor="pointer"><svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-10 -10 90 90">
+                                                    <use xlink:href="#close-tl" transform-origin="40 40"></use>
+                                                    <use xlink:href="#close-tr" transform-origin="40 40"></use>
+                                                    <use xlink:href="#close-br" transform-origin="40 40"></use>
+                                                    <use xlink:href="#close-bl" transform-origin="40 40"></use>
+                                                </svg></div>
+                                        </div>
+                                        <div class="storyDetailInfo">
+                                            <div class="storyDetailInfoNameWrapper">
+                                                <div class="wrapperText storyDetailInfoName">
+                                                    <div class="wrapperTextContent"><svg
+                                                            xmlns="http://www.w3.org/2000/svg"
+                                                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                            viewBox="0 0 534 70"><text class="storyDetailInfoNameText"
+                                                                x="0" y="60" font-size="68"></text></svg></div>
+                                                </div>
+                                                <div class="wrapperText storyDetailInfoNameEn">
+                                                    <div class="wrapperTextContent"><svg
+                                                            xmlns="http://www.w3.org/2000/svg"
+                                                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                            viewBox="0 0 495 30"><text class="storyDetailInfoNameEnText"
+                                                                x="0" y="27" font-size="30"></text></svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="storyDetailInfoDescWrapper">
+                                                <div class="wrapperText wrapperTextDirectionDown"
+                                                    data-wrapper-text-direction="down">
+                                                    <div class="wrapperTextContent">
+                                                        <div class="storyDetailInfoDesc">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+
+    <script src='js/Rx.min.js'></script>
+    <script src='js/rxcss.min.js'></script>
+    <script src="js/index2.js"></script>
+</body>
+
+</html>
