@@ -34602,6 +34602,7 @@
                                 document.addEventListener(s, Ct((function (e) {
                                     var t;
                                     i.interactive = !0, "targetTouches" in e ? (i.clientX = e.targetTouches[0].clientX, i.clientY = e.targetTouches[0].clientY, i.x = e.targetTouches[0].clientX - .5 * di.instance.width, i.y = .5 * di.instance.height - e.targetTouches[0].clientY) : (i.clientX = e.clientX, i.clientY = e.clientY, i.x = e.clientX - .5 * di.instance.width, i.y = .5 * di.instance.height - e.clientY);
+                                    // console.log(i.clientX, i.clientY, i.x, i.y);
                                     for (var n = (null === (t = e.composedPath) || void 0 === t ? void 0 : t.call(e)) || [], r = !1, a = 0; a < 3; a++) {
                                         var o = n[a];
                                         if (o && ("pointer" === o.dataset.cursor || ["A", "BUTTON", "INPUT"].includes(o.tagName))) {
